@@ -1,5 +1,6 @@
 import streamlit
 
+
 streamlit.title('My parents New Healthy Diner')
 
 streamlit.header ('Breakfast Menu')
@@ -35,4 +36,5 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it the screnn as a table
 streamlit.dataframe(fruityvice_normalized)
 
+import snowflake.connector
 
