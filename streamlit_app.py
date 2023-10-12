@@ -64,10 +64,10 @@ if streamlit.button('Get fruit load list'):
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
 
 #Allow the end user to addd a fruit to the list
-def insert_row_snowflake():
+def insert_row_snowflake(new_fruit):
   with my_cnx.cursor() as my_cur:
-       my_cur.execute("INSERT INTO fruit_load_list VALUES ('jackfruit', 'papaya', 'guava', 'kiwi')")
-       return "Thanks for adding" 
+       my_cur.execute("INSERT INTO fruit_load_list VALUES ('from streamlit')")
+       return "Thanks for adding" + new_fruit
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
 if streamlit.button('Add a fruit to the list'):
