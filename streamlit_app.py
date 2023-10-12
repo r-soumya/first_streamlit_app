@@ -61,7 +61,7 @@ if streamlit.button('Get fruit load list'):
     streamlit.dataframe(my_data_rows)
 
  
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
 
 #Allow the end user to addd a fruit to the list
 def insert_row_snowflake(new_fruit):
